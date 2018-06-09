@@ -5,22 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Browser Animations Required by Angular Material
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Angular Material Component Import
-import {MatButtonModule} from '@angular/material/button';
+// Angular Material Component Module Import
+import { MaterialModule } from './material.module';
+
+// Components
+import { HomeComponent } from './components/home/home.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
