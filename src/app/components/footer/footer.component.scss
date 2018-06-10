@@ -1,0 +1,7 @@
+@import "../../../scss/vars";
+@import "../../../scss/mixins";
+
+.footer {
+  @include size(100%, 75px);
+  border: $tb-lime;
+}
