@@ -11,7 +11,7 @@ import { MatMenuModule } from '@angular/material/menu';
 			MatMenuModule,
 		],
     exports: [
-			MatButtonModule
+			MatButtonModule,
 			MatMenuModule,
 		],
 })
