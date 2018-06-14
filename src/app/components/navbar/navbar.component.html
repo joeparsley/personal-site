@@ -5,12 +5,19 @@
   <!-- Nav Button -->
   <div class="btn-wrapper">
     <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Menu</button>
-    <mat-menu #menu="matMenu">
+    <mat-menu #menu="matMenu" class="dropdown-menu">
       <button mat-menu-item>
         LinkedIn
-        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-linkedin nav-icon"></i>
       </button>
-      <button mat-menu-item>Item 2</button>
+      <button mat-menu-item>
+        GitHub
+        <i class="fab fa-github nav-icon"></i>
+      </button>
+      <button mat-menu-item>
+          Resume
+          <i class="fas fa-file-alt nav-icon"></i>
+        </button>
     </mat-menu>
   </div>
 </div>
