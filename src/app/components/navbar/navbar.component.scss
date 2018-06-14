@@ -2,6 +2,13 @@
 @import "../../../scss/mixins";
 
 .navbar {
-  @include size(100%, 75px);
   border: $tb-red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.parsley-logo {
+  @include size(75px);
 }

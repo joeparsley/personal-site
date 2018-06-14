@@ -1,3 +1,16 @@
 <div class="navbar">
-  navbar works
+  <!-- Logo -->
+  <img class="parsley-logo" src="../../../assets/parsley-logo.svg" alt="Joe Parsley Logo"/>
+
+  <!-- Nav Button -->
+  <div class="btn-wrapper">
+    <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        LinkedIn
+        <i class="fab fa-linkedin"></i>
+      </button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+  </div>
 </div>
