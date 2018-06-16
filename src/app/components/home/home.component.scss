@@ -27,6 +27,7 @@
     width: 90%;
     text-align: center;
     margin-top: 75px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
     @include respond-to($phone-lg) {
       font-size: 24px;
       line-height: 28px;
@@ -48,4 +49,67 @@
       line-height: 44px;
     }
   }
+}
+
+// Project Wrapper, Header and Grid Styles
+.project-wrapper {
+  width: 100%;
+}
+.project-header {
+  padding: 20px;
+  color: $accent-dark;
+  font-size: 20px;
+  text-align: left;
+  @include respond-to($phone-lg) {
+    font-size: 22px;
+  }
+  @include respond-to($tablet-sm) {
+    font-size: 24px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 28px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 30px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 32px;
+  }
+}
+.project-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  @include respond-to($tablet-md) {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.project-card {
+  box-sizing: border-box;
+  border: 1px solid $accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  .test {
+    background-color: $primary;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.skills-wrapper {
+  height: 300px;
+  border: $tb-lime;
+}
+
+.about-me-wrapper {
+  height: 300px;
+  border: $tb-cyan;
+}
+
+.contact-wrapper {
+  height: 300px;
+  border: $tb-orange;
 }
