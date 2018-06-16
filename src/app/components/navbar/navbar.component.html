@@ -1,10 +1,11 @@
 <div class="navbar">
   <!-- Logo -->
   <img class="parsley-logo" src="../../../assets/parsley-logo.svg" alt="Joe Parsley Logo"/>
-
   <!-- Nav Button -->
   <div class="btn-wrapper">
-    <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Menu</button>
+    <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">
+      <i class="fas fa-bars"></i>
+    </button>
     <mat-menu #menu="matMenu" class="dropdown-menu">
       <button mat-menu-item>
         LinkedIn
