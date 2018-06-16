@@ -20,34 +20,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .hero-text {
-    color: white;
-    font-size: 20px;
-    line-height: 24px;
-    width: 90%;
-    text-align: center;
-    margin-top: 75px;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
-    @include respond-to($phone-lg) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    @include respond-to($tablet-sm) {
-      font-size: 26px;
-      line-height: 30px;
-    }
-    @include respond-to($tablet-md) {
-      font-size: 30px;
-      line-height: 34px;
-    }
-    @include respond-to($tablet-md) {
-      font-size: 34px;
-      line-height: 38px;
-    }
-    @include respond-to($tablet-lg) {
-      font-size: 40px;
-      line-height: 44px;
-    }
+}
+.hero-text {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  width: 90%;
+  text-align: center;
+  margin-top: 75px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+  @include respond-to($phone-lg) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @include respond-to($tablet-sm) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 
@@ -139,15 +139,47 @@
     width: 100%;
   }
 }
-
-
-
-
+// About Me Wrapper, Content, Image and Bio Styles
 .about-me-wrapper {
-  height: 300px;
-  border: $tb-cyan;
+  background-image: url('../../../assets/banner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
-
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  @include respond-to($tablet-md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.about-img {
+  width: 100px;
+  border-radius: 50%; 
+  margin-bottom: 20px;
+  @include respond-to($phone-lg) {
+    width: 150px;
+  }
+  @include respond-to($tablet-md) {
+    width: 250px;
+    margin-bottom: 0;
+  }
+}
+.about-bio {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+  text-align: center;
+  @include respond-to($tablet-md) {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
 .contact-wrapper {
   height: 300px;
   border: $tb-orange;
