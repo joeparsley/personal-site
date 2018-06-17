@@ -1,6 +1,6 @@
 @import "../../../scss/vars";
 @import "../../../scss/mixins";
-
+// Nav Wrapper
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,11 +12,55 @@
   box-sizing: border-box;
   width: 100%;
 }
-
+// Logo
 .parsley-logo {
   @include size(65px);
+  @include respond-to($tablet-md) {
+    @include size(75px);
+  }
 }
-
-.nav-icon {
+// Desktop Navbar
+.desktop-nav {
+  display: none;
+  @include respond-to($tablet-md) {
+    display: block;
+  }
+  a {
+    margin-right: 40px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: $primary-light;
+      text-decoration: underline;
+    }
+  }
+  a:nth-of-type(3) {
+    margin-right: 0;
+  }
+}
+.desktop-nav-icon {
+  margin-left: 5px;
+}
+// Mobile Navbar
+.mobile-nav {
+  display: block;
+  @include respond-to($tablet-md) {
+    display: none;
+  }
+}
+.mobile-btn {
+  color: white;
+  i {
+    font-size: 20px;
+  }
+}
+.menu-item {
+  color: $accent;
+}
+.mobile-nav-icon {
   margin-left: 10px;
+  color: $accent;
 }

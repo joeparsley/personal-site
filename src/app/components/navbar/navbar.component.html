@@ -1,24 +1,30 @@
 <div class="navbar">
   <!-- Logo -->
-  <img class="parsley-logo" src="../../../assets/parsley-logo.svg" alt="Joe Parsley Logo"/>
-  <!-- Nav Button -->
-  <div class="btn-wrapper">
-    <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">
+  <img class="parsley-logo" src="../../../assets/logo.svg" alt="Joe Parsley Logo"/>
+  <!-- Desktop Nav Lnks -->
+  <div class="desktop-nav">
+    <a *ngFor="let link of navLinks" 
+        class="nav-link" 
+        href="{{link.href}}" 
+        [attr.download]="link.download ? '' : null">
+      {{link.title}}
+      <i class="{{link.icon}} desktop-nav-icon"></i>
+    </a>
+  </div>
+  <!-- Mobile Nav Links -->
+  <div class="mobile-nav">
+    <button class="mobile-btn" mat-raised-button [matMenuTriggerFor]="menu" color="primary">
       <i class="fas fa-bars"></i>
     </button>
     <mat-menu #menu="matMenu" class="dropdown-menu">
-      <button mat-menu-item>
-        LinkedIn
-        <i class="fab fa-linkedin nav-icon"></i>
-      </button>
-      <button mat-menu-item>
-        GitHub
-        <i class="fab fa-github nav-icon"></i>
-      </button>
-      <button mat-menu-item>
-          Resume
-          <i class="fas fa-file-alt nav-icon"></i>
-        </button>
+      <a *ngFor="let link of navLinks" 
+          class="menu-item" 
+          href="{{link.href}}" 
+          mat-menu-item 
+          [attr.download]="link.download ? '' : null">
+        {{link.title}}
+        <i class="{{link.icon}} mobile-nav-icon"></i>
+      </a>
     </mat-menu>
   </div>
 </div>
