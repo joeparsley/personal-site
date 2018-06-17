@@ -7,6 +7,7 @@
       </div>
     </div>
   </div>
+
   <!-- Projects -->
   <div class="project-wrapper">
     <!-- Project Header -->
@@ -15,20 +16,32 @@
     </div>
     <!-- Project Grid and Cards -->
     <div class="project-grid">
-      <div class="project-card">
-        <div class="test"></div>
-      </div>
-      <div class="project-card">
-        <div class="test"></div>
-      </div>
-      <div class="project-card">
-        <div class="test"></div>
-      </div>
-      <div class="project-card">
-        <div class="test"></div>
+      <div class="project-card-wrapper" *ngFor="let card of cardData">
+        <div class="card">
+          <div class="overlay-content">
+            <div class="card-header">{{card.header}}</div>
+            <div class="card-content">{{card.description}}</div>
+            <div class="card-action">
+              <a  *ngFor="let btn of card.buttons"
+                  class="card-btn"
+                  href="{{btn.href}}" 
+                  matTooltip="{{btn.toolTip}}"
+                  aria-label="Button that displays a tooltip when focused or hovered over">
+                <i class="{{btn.class}}"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
   <!-- Skills -->
   <div class="skill-wrapper">
     <!-- Skills Header -->

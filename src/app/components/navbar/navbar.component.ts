@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
       download: false
     },
     {
-      title: 'resume',
+      title: 'Resume',
       icon: 'fas fa-file-alt',
       href: './../../../assets/joeparsley-resume.pdf',
       download: true
