@@ -4,8 +4,10 @@
 .hero-wrapper {
   height: 300px;
   background-image: url('../../../assets/banner.jpg');
-  background-attachment: fixed;
   background-size: cover;
+  @include respond-to($tablet-sm) {
+    background-attachment: fixed;
+  }
   @include respond-to($tablet-md) {
     height: 400px;
   }
@@ -142,9 +144,10 @@
 // About Me Wrapper, Content, Image and Bio Styles
 .about-me-wrapper {
   background-image: url('../../../assets/banner.jpg');
-  background-attachment: fixed;
   background-size: cover;
-  background-position: bottom;
+  @include respond-to($tablet-sm) {
+    background-attachment: fixed;
+  }
 }
 .about-overlay {
   @include size(100%);
