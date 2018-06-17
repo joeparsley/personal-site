@@ -145,6 +145,14 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.about-overlay {
+  @include size(100%);
+  background-color: rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about-me-content {
   display: flex;
   flex-direction: column;
@@ -153,6 +161,26 @@
   @include respond-to($tablet-md) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+.about-header {
+  text-align: center;
+  padding: 20px 0; color: white;
+  font-size: 20px;
+  @include respond-to($phone-lg) {
+    font-size: 22px;
+  }
+  @include respond-to($tablet-sm) {
+    font-size: 24px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 28px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 30px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 32px;
   }
 }
 .about-img {
