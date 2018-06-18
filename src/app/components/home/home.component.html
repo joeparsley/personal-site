@@ -17,7 +17,7 @@
     <!-- Project Grid and Cards -->
     <div class="project-grid">
       <div class="project-card-wrapper" *ngFor="let card of cardData">
-        <div class="card">
+        <div class="card" [style.background-image]="'url(' + card.bg +')'">
           <div class="overlay-content">
             <div class="card-header">{{card.header}}</div>
             <div class="card-content">{{card.description}}</div>
