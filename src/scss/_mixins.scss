@@ -73,19 +73,13 @@
 // Custom Icon Mixin
 @mixin custom-icon($url) {
   background-image: url($url);
-  background-size: 30px;
+  background-size: 50px;
   background-position: center;
   background-repeat: no-repeat;
-  @include size(30px);
+  @include size(50px);
   display: block;
-  @include respond-to($phone-lg) {
-    background-size: 40px;
-    @include size(40px);
-  }
   @include respond-to($tablet-lg) {
     margin-bottom: 20px;
-    background-size: 50px;
-    @include size(50px);
   }
   @include respond-to($desktop-md) {
     background-size: 60px;

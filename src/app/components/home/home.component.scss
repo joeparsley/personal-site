@@ -3,8 +3,9 @@
 // Hero Wrapper
 .hero-wrapper {
   height: 300px;
-  background-image: url('../../../assets/banner.jpg');
+  background-image: url('../../../assets/test8.jpg');
   background-size: cover;
+  // background-position: bottom;
   @include respond-to($tablet-sm) {
     background-attachment: fixed;
   }
@@ -12,7 +13,7 @@
     height: 400px;
   }
   @include respond-to($tablet-lg) {
-    // height: 500px;
+    height: 500px;
   }
 }
 // Overlay and Hero Text
@@ -274,15 +275,12 @@
   }
 }
 .skill-item {
-  @include size(80px);
-  padding: 20px;
+  @include size(100px);
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include respond-to($phone-lg) {
-    @include size(100px);
-  }
   @include respond-to($tablet-md) {
     @include size(125px);
     padding: 0 20px;
@@ -293,13 +291,9 @@
 }
 .skill-icon {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 50px;
   color: $accent-dark;
-  @include respond-to($phone-lg) {
-    font-size: 35px;
-  }
   @include respond-to($tablet-lg) {
-    font-size: 50px;
     margin-bottom: 20px;
   }
   @include respond-to($desktop-md) {
@@ -322,8 +316,9 @@
 }
 // About Me Wrapper, Content, Image and Bio Styles
 .about-me-wrapper {
-  background-image: url('../../../assets/banner.jpg');
+  background-image: url('../../../assets/test7.jpg');
   background-size: cover;
+  background-position: bottom;
   @include respond-to($tablet-sm) {
     background-attachment: fixed;
   }
