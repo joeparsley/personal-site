@@ -233,15 +233,83 @@
   grid-template-columns: 100%;
 }
 .skill-section {
-  border: 1px solid $accent;
+  padding: 20px;
+}
+.skill-content-header {
+  font-size: 20px;
+  color: $primary-dark;
+  padding: 20px 0;
+  border-bottom: 1px solid $accent;
+  @include respond-to($phone-lg) {
+    font-size: 22px;
+  }
+  @include respond-to($tablet-sm) {
+    font-size: 26px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 30px;
+  }
+  @include respond-to($tablet-md) {
+    font-size: 32px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 34px;
+  }
+}
+.skill-content {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  @include respond-to($tablet-sm) {
+    justify-content: flex-start;
+  }
+}
+.skill-item {
+  @include size(80px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  .skill-content {
-    background-color: $primary;
-    height: 100px;
-    width: 100%;
+  @include respond-to($phone-lg) {
+    @include size(100px);
+  }
+  @include respond-to($tablet-md) {
+    @include size(125px);
+    padding: 0 20px;
+  }
+  @include respond-to($tablet-lg) {
+    @include size(150px);
+  }
+}
+.skill-icon {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: $accent-dark;
+  @include respond-to($phone-lg) {
+    font-size: 40px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  @include respond-to($desktop-md) {
+    font-size: 60px;
+  }
+}
+.skill-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $primary-dark;
+  text-align: center;
+  @include respond-to($tablet-sm) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include respond-to($tablet-lg) {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 // About Me Wrapper, Content, Image and Bio Styles
@@ -347,3 +415,60 @@
     }
   }
 }
+
+// Icon Classes
+.html5-icon {
+  @include custom-icon('../../../assets/html5.png');
+}
+.jsx-icon {
+  @include custom-icon('../../../assets/react.png');
+}
+.jekyll-icon {
+  @include custom-icon('../../../assets/jekyll.svg');
+}
+.css3-icon {
+  @include custom-icon('../../../assets/css3.png');
+}
+.sass-icon {
+  @include custom-icon('../../../assets/sass.png');
+}
+.bootstrap-icon {
+  @include custom-icon('../../../assets/bootstrap.png');
+}
+.materialize-icon {
+  @include custom-icon('../../../assets/materialize.png');
+}
+.angular-material-icon {
+  @include custom-icon('../../../assets/angular.png');
+}
+.js-icon {
+  @include custom-icon('../../../assets/javascript.png');
+}
+.ts-icon {
+  @include custom-icon('../../../assets/ts.png');
+}
+.react-icon {
+  @include custom-icon('../../../assets/react.png');
+}
+.angular-icon {
+  @include custom-icon('../../../assets/angular.png');
+}
+.jquery-icon {
+  @include custom-icon('../../../assets/jquery.png');
+}
+.ionic-icon {
+  @include custom-icon('../../../assets/ionic.png');
+}
+.node-icon {
+  @include custom-icon('../../../assets/nodejs.png');
+}
+.sketch-icon {
+  @include custom-icon('../../../assets/sketch.png');
+}
+.git-icon {
+  @include custom-icon('../../../assets/git.png');
+}
+.npm-icon {
+  @include custom-icon('../../../assets/npm.png');
+}
+

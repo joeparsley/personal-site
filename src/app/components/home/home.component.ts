@@ -79,6 +79,109 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  skillData = [
+    {
+      header: 'CSS',
+      items: [
+        {
+          class: 'css3-icon',
+          text: 'CSS3'
+        },
+        {
+          class: 'sass-icon',
+          text: 'SASS3'
+        },
+        {
+          class: 'angular-icon',
+          text: 'Angular Material'
+        },
+        {
+          class: 'bootstrap-icon',
+          text: 'Bootstrap'
+        },
+        {
+          class: 'materialize-icon',
+          text: 'Materialize'
+        },
+        {
+          class: 'fas fa-desktop',
+          text: 'Responsive Design'
+        },
+      ]
+    },
+    {
+      header: 'HTML',
+      items: [
+        {
+          class: 'html5-icon',
+          text: 'HTML5'
+        },
+        {
+          class: 'react-icon',
+          text: 'JSX'
+        },
+        {
+          class: 'jekyll-icon',
+          text: 'Jekyll'
+        }
+      ]
+    },
+    {
+      header: 'JS',
+      items: [
+        {
+          class: 'js-icon',
+          text: 'Javascript'
+        },
+        {
+          class: 'ts-icon',
+          text: 'Typescript'
+        },
+        {
+          class: 'angular-icon',
+          text: 'Angular'
+        },
+        {
+          class: 'ionic-icon',
+          text: 'Ionic'
+        },
+        {
+          class: 'react-icon',
+          text: 'React'
+        },
+        {
+          class: 'jquery-icon',
+          text: 'jQuery'
+        },
+        {
+          class: 'node-icon',
+          text: 'Node.js'
+        }
+      ]
+    },
+    {
+      header: 'Other',
+      items: [
+        {
+          class: 'sketch-icon',
+          text: 'Sketch 3'
+        },
+        {
+          class: 'git-icon',
+          text: 'Git'
+        },
+        {
+          class: 'fab fa-gitlab',
+          text: 'GitLab'
+        },
+        {
+          class: 'npm-icon',
+          text: 'NPM'
+        },
+      ]
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {

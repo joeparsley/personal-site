@@ -7,7 +7,6 @@
       </div>
     </div>
   </div>
-
   <!-- Projects -->
   <div class="project-wrapper">
     <!-- Project Header -->
@@ -35,13 +34,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
   <!-- Skills -->
   <div class="skill-wrapper">
     <!-- Skills Header -->
@@ -50,17 +42,14 @@
     </div>
     <!-- Skills Grid and content -->
     <div class="skill-grid">
-      <div class="skill-section">
-        <div class="skill-content"></div>
-      </div>
-      <div class="skill-section">
-        <div class="skill-content"></div>
-      </div>
-      <div class="skill-section">
-        <div class="skill-content"></div>
-      </div>
-      <div class="skill-section">
-        <div class="skill-content"></div>
+      <div class="skill-section" *ngFor=" let skill of skillData">
+        <div class="skill-content-header">{{skill.header}}</div>
+        <div class="skill-content">
+          <div class="skill-item" *ngFor=" let item of skill.items">
+            <i class="{{item.class}} skill-icon"></i>
+            <div class="skill-text">{{item.text}}</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
