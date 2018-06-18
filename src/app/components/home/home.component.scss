@@ -3,23 +3,19 @@
 // Hero Wrapper
 .hero-wrapper {
   height: 300px;
-  background-image: url('../../../assets/test8.jpg');
+  background-image: url('../../../assets/banner.jpg');
   background-size: cover;
-  // background-position: bottom;
   @include respond-to($tablet-sm) {
     background-attachment: fixed;
   }
   @include respond-to($tablet-md) {
     height: 400px;
   }
-  @include respond-to($tablet-lg) {
-    height: 500px;
-  }
 }
 // Overlay and Hero Text
 .overlay {
   @include size(100%);
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0,0,0,.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +27,7 @@
   width: 90%;
   text-align: center;
   margin-top: 75px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
   @include respond-to($phone-lg) {
     font-size: 24px;
     line-height: 28px;
@@ -62,7 +58,7 @@
   color: $accent-dark;
   font-size: 24px;
   text-align: center;
-  text-decoration: underline;
+  font-weight: 600;
   @include respond-to($phone-lg) {
     font-size: 26px;
   }
@@ -215,7 +211,7 @@
   color: $accent-dark;
   font-size: 24px;
   text-align: center;
-  text-decoration: underline;
+  font-weight: 600;
   @include respond-to($phone-lg) {
     font-size: 26px;
   }
@@ -243,14 +239,12 @@
   padding: 20px;
 }
 .skill-content-header {
-  font-size: 20px;
+  font-size: 22px;
   color: $primary-dark;
   padding: 20px 0;
   border-bottom: 1px solid $accent;
   text-align: center;
-  @include respond-to($phone-lg) {
-    font-size: 22px;
-  }
+  font-weight: 600;
   @include respond-to($tablet-sm) {
     font-size: 26px;
   }
@@ -316,7 +310,7 @@
 }
 // About Me Wrapper, Content, Image and Bio Styles
 .about-me-wrapper {
-  background-image: url('../../../assets/test7.jpg');
+  background-image: url('../../../assets/banner2.jpg');
   background-size: cover;
   background-position: bottom;
   @include respond-to($tablet-sm) {
@@ -389,6 +383,7 @@
   text-align: center;
   font-size: 20px;
   color: $accent-dark;
+  font-weight: 600;
   @include respond-to($phone-lg) {
     font-size: 24px;
   }
