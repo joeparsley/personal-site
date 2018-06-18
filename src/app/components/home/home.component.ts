@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
       header: 'Vingo',
       bg: '../../../assets/vingo-worth.png',
       bg2: '../../../assets/vingo-home.png',
+      // tslint:disable-next-line:max-line-length
       description: 'For this client I was responsible for building the front-end of their consumer phone app based off of designs from their designer. After I finished their phone app I was able to go on and build out their consumer and dealership facing websites. I worked closely with all members of the Vingo team to make sure the product I delivered to them was exactly what they asked for.',
       buttons: [
         {
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
     {
       header: 'Flight',
       bg: '../../../assets/flight.png',
+      // tslint:disable-next-line:max-line-length
       description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
       buttons: [
         {
@@ -46,6 +48,7 @@ export class HomeComponent implements OnInit {
     {
       header: 'ScatterSchool',
       bg: '../../../assets/scatterschool.png',
+      // tslint:disable-next-line:max-line-length
       description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
       buttons: [
         {
@@ -63,6 +66,7 @@ export class HomeComponent implements OnInit {
     {
       header: 'BIM Earth',
       bg: '../../../assets/bimearth.png',
+      // tslint:disable-next-line:max-line-length
       description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
       buttons: [
         {
