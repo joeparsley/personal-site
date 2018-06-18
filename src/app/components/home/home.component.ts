@@ -10,8 +10,7 @@ export class HomeComponent implements OnInit {
   cardData = [
     {
       header: 'Vingo',
-      bg: '../../../assets/vingo-worth.png',
-      bg2: '../../../assets/vingo-home.png',
+      bg: '../../../assets/vingo-equity2.png',
       // tslint:disable-next-line:max-line-length
       description: 'For this client I was responsible for building the front-end of their consumer phone app based off of designs from their designer. After I finished their phone app I was able to go on and build out their consumer and dealership facing websites. I worked closely with all members of the Vingo team to make sure the product I delivered to them was exactly what they asked for.',
       buttons: [
@@ -107,10 +106,10 @@ export class HomeComponent implements OnInit {
           class: 'materialize-icon',
           text: 'Materialize'
         },
-        {
-          class: 'fas fa-desktop',
-          text: 'Responsive Design'
-        },
+        // {
+        //   class: 'fas fa-desktop',
+        //   text: 'Responsive Design'
+        // },
       ]
     },
     {
