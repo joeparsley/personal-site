@@ -296,7 +296,7 @@
   font-size: 30px;
   color: $accent-dark;
   @include respond-to($phone-lg) {
-    font-size: 40px;
+    font-size: 35px;
   }
   @include respond-to($tablet-lg) {
     font-size: 50px;
