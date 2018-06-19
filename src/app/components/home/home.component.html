@@ -23,7 +23,8 @@
             <div class="card-action">
               <a  *ngFor="let btn of card.buttons"
                   class="card-btn"
-                  href="{{btn.href}}" 
+                  href="{{btn.href}}"
+                  target="_blank" 
                   matTooltip="{{btn.toolTip}}"
                   aria-label="Button that displays a tooltip when focused or hovered over">
                 <i class="{{btn.class}}"></i>

@@ -5,7 +5,8 @@
   <div class="desktop-nav">
     <a *ngFor="let link of navLinks" 
         class="nav-link" 
-        href="{{link.href}}" 
+        href="{{link.href}}"
+        target="_blank" 
         [attr.download]="link.download ? '' : null">
       {{link.title}}
       <i class="{{link.icon}} desktop-nav-icon"></i>
@@ -19,7 +20,8 @@
     <mat-menu #menu="matMenu" class="dropdown-menu">
       <a *ngFor="let link of navLinks" 
           class="menu-item" 
-          href="{{link.href}}" 
+          href="{{link.href}}"
+          target="_blank" 
           mat-menu-item 
           [attr.download]="link.download ? '' : null">
         {{link.title}}
