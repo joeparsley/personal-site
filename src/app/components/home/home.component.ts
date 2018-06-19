@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       header: 'Flight',
       bg: '../../../assets/flight.png',
       // tslint:disable-next-line:max-line-length
-      description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
+      description: 'This is the client facing site for Flight: a small start up web development team that empowers entrepreneurs and idea people to lift off! For this project and had the pleasure of laying out the original UI and helping maintain the project while working with other Flight clients and their team.',
       buttons: [
         {
           toolTip: 'Live Site',
@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
       header: 'ScatterSchool',
       bg: '../../../assets/scatterschool.png',
       // tslint:disable-next-line:max-line-length
-      description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
+      description: 'Community made open, editable tutorials for everyone. ScatterSchool is an ongoing project that i’ve been working on over at Flight. For this project I\'ve worked on multiple re-designs and have help guided several groups of interns on feature projects for this site.',
       buttons: [
         {
           toolTip: 'Live Site',
@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit {
       header: 'BIM Earth',
       bg: '../../../assets/bimearth.png',
       // tslint:disable-next-line:max-line-length
-      description: 'This is a project that I did, it was really fun and really cool. You should ask me about it our hire me please, thank you.',
+      description: 'BIM Earth is way for people to associate geographical locations for information that\'s meaningful to them. For this project I was able to spend time with client, wire-framing and mocking up the UI their idea from scratch. I then went on to implement these designs on the front-end. This project is built with Angular, Angular Material, Firebase/Firestore and Mapbox.',
       buttons: [
         {
           toolTip: 'Live Site',
